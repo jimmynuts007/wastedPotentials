@@ -1,0 +1,2 @@
+# wastedPotentials
+ProjectGenerator
