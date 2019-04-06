@@ -29,6 +29,7 @@ class firstWastedClass {
 	Path path = Paths.get("C:\\Images\\Background\\Backgroundkeandar\\..\\..\\Foreground\\Necklace\\..\\Earrings\\..\\Etc");
 	Path path1 = Paths.get("D:\\images\\src\\main\\java\\..\\resurce\\..\\..\\test\\java\\..\\resource\\..\\..\\..\\Target\\Classes\\..\\Test-Classes");
 	StringBuilder s = new StringBuilder(a.length());
+	s.append("D:\\Images\\");
 	for(int i=1;i<a.length()-1;i++) {
 	if(a.charAt(i)=='[') {
 		s.append("\\");
@@ -47,7 +48,7 @@ class firstWastedClass {
 	try {
 		System.out.println(s);
 
-	    Files.createDirectories(path1);
+	    Files.createDirectories(Paths.get(s.toString()));
 	} catch (IOException e) {
 	    System.err.println("Cannot create directories - " + e);
 	}
